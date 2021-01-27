@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI CALCULATOR</title>
+  <link rel="shortcut icon" type="image/x-icon" href="android-icon-144x144.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="container-first">
+    <div class="bmi-container">
+      <h3 class="title">BMI CALCULATOR</h3>
+      <div class="container-gender">
+        <div id="card-male" class="card-male">
+          <i class="fa fa-mars fa-4x"></i>
+          <h2 class="label-male">MALE</h2>
+        </div>
+        <div id="card-female" class="card-female" >
+          <i class="fa fa-venus fa-4x"></i>
+          <h2 class="label-female">FEMALE</h2>
+        </div>
+      </div>
+      <div class="card-height">
+        <div class="height">
+          <h2 class="label-height">HEIGHT</h2>
+        <div class="value">
+          <h1 id="height-value" class="height-value">139</h1>
+          <div class="height-unit">cm</div>
+        </div>
+        </div>
+        <input type="range" class="slider" name="rangeInput" id="slider" min="120" max="220" value="163">
+      </div>
+      <div class="container-weight-age">
+        <div class="card-weight">
+          <h2 class="label-weight">WEIGHT</h2>
+          <h1 id="weight-value" class="weight-value">49</h1>
+          <div class="weight-icon">
+            <i id="minus-weight" class="fa fa-minus fa-1x" ></i>
+            <i id="plus-weight" class="fa fa-plus fa-1x" f></i>
+          </div>
+        </div>
+        <div class="card-age">
+          <h2 class="label-age">AGE</h2>
+          <h1 id="age-value" class="age-value">49</h1>
+          <div class="age-icon">
+            <i id="minus-age" class="fa fa-minus fa-1x" ></i>
+            <i id="plus-age" class="fa fa-plus fa-1x" f></i>
+          </div>
+        </div>
+      </div>
+      <a href="#container-second" id="calculate" class="calculate">
+        <h3>
+          CALCULATE
+        </h3>
+      </a>
+    </div>
+  </div>
+
+  <div id="container-second">
+    <div class="result-container">
+      <div class="top">
+        <a href="#container-first"><i id="arrow" class="fa fa-arrow-left fa-1x" ></i></a>
+        <h3 class="title">BMI CALCULATOR</h3>
+      </div>
+      <h1 class="result-text">Your Result</h1>
+      <div class="card-result">
+        <div id="result-label" class="result-label">NORMAL</div>
+        <h1 class="bmi" id="bmi">18.7</h1>
+        <div class="suggestion" id="suggestion">You have a normal body weight. Good job!</div>
+
+      </div>
+
+      <a href="#container-first" id="re-calculate" class="re-calculate">
+        <h3>
+          RE-CALCULATE
+        </h3>
+      </a>
+    </div>
+  </div>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
