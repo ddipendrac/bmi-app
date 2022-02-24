@@ -61,8 +61,8 @@ h3 {
   background: rgba(76, 79, 94, 0.9);
 }
 
-#container-first,
-#container-second {
+#calculate,
+#result {
   height: 100vh;
   max-width: 100vw;
   display: flex;
