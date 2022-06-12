@@ -3,4 +3,4 @@
 # link: https://bmi-web-app.netlify.app/
 
 # Used technologies in the app
-# HTML, # CSS, # JavaScript
+# HTML,  CSS,  JavaScript
